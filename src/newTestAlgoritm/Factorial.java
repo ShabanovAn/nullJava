@@ -27,3 +27,19 @@ public class Factorial {
     }
 
 }
+class Factorial2 {
+    public static void main(String[] args) {
+        int n = 5; // number to calculate factorial of
+        int result = factorial(n);
+        System.out.println("Factorial of " + n + " is " + result);
+    }
+
+    public static int factorial(int n) {
+        int res = 1, i = 2;
+        while (i <= n) {
+            res *= i;
+            i++;
+        }
+        return res;
+    }
+}
